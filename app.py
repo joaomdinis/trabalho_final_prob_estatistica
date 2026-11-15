@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 import pyarrow.parquet as pq
 import streamlit as st
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent
 ARQUIVOS = {
   "pop": ROOT / "data" / "processed" / "populacao.parquet",
   "amo": ROOT / "outputs" / "amostra" / "amostra.parquet",
