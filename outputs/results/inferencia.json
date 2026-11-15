@@ -1,0 +1,887 @@
+{
+  "gerado_em": "2026-11-13T13:56:56+00:00",
+  "alfa": 0.05,
+  "nivel_confianca": 0.95,
+  "z_critico": 1.959963984540054,
+  "n": 1537,
+  "N": 7642045,
+  "fracao_amostral": 0.00020112417553154948,
+  "semente": 20261112,
+  "sha256_amostra_parquet": "5df6cd60e0b29099b9d8aca8be7cdcb632063f59f504e916e0d792aae47892ce",
+  "sha256_populacao_json": "3b42f14ea1033c0fb18a186a99b4c3708194e28a97d4817f3819fcc5eac271fa",
+  "questoes": {
+    "qp1": {
+      "tipo": "proporcao",
+      "variavel": "superior_completo",
+      "evento": "superior_completo = verdadeiro",
+      "unidade": "proporção",
+      "dominio": "mulheres ocupadas",
+      "h0": "p_M = p_H",
+      "h1": "p_M != p_H",
+      "n_dominio": 621,
+      "sucessos": 182,
+      "lado_esperado": "maior",
+      "estimativa": 0.29307568438003223,
+      "ic": {
+        "metodo": "Wilson",
+        "inferior": 0.2586357444469505,
+        "superior": 0.3300599216744148,
+        "meia_largura": 0.03571208861373215
+      },
+      "estatistica": {
+        "nome": "z",
+        "valor": 10.000711253057265,
+        "erro_padrao": 0.014322504231097669
+      },
+      "valor_p": 1.5130638255379593e-23,
+      "rejeita_h0": true,
+      "veredito_amostral": "apoia",
+      "referencia_nome": "p_H",
+      "referencia": 0.1498404551441335,
+      "valor_populacional": 0.28422651226644124,
+      "N_dominio": 3223225,
+      "diferenca_estimativa_menos_populacional": 0.008849172113590986,
+      "ic_contem_valor_populacional": true,
+      "veredito_exato": "vale",
+      "condicoes": [
+        {
+          "nome": "n*ref >= 10",
+          "valor": 93.0509226445069,
+          "limite": 10,
+          "status": "ok"
+        },
+        {
+          "nome": "n*(1-ref) >= 10",
+          "valor": 527.9490773554932,
+          "limite": 10,
+          "status": "ok"
+        },
+        {
+          "nome": "sem nulos no domínio",
+          "valor": 0,
+          "limite": 0,
+          "status": "ok"
+        }
+      ],
+      "duas_proporcoes": {
+        "n_mulheres": 621,
+        "n_homens": 916,
+        "p_mulheres": 0.29307568438003223,
+        "p_homens": 0.1703056768558952,
+        "diferenca": 0.12277000752413703,
+        "z": 5.702362361208307,
+        "valor_p": 1.1815831129419055e-08,
+        "ic": {
+          "metodo": "Newcombe",
+          "inferior": 0.07979316044370914,
+          "superior": 0.16629850574962796
+        },
+        "condicoes": [
+          {
+            "nome": "sucessos mulheres",
+            "valor": 182,
+            "limite": 10,
+            "status": "ok"
+          },
+          {
+            "nome": "fracassos mulheres",
+            "valor": 439,
+            "limite": 10,
+            "status": "ok"
+          },
+          {
+            "nome": "sucessos homens",
+            "valor": 156,
+            "limite": 10,
+            "status": "ok"
+          },
+          {
+            "nome": "fracassos homens",
+            "valor": 760,
+            "limite": 10,
+            "status": "ok"
+          }
+        ]
+      }
+    },
+    "qp2": {
+      "tipo": "proporcao",
+      "variavel": "rendimento",
+      "evento": "rendimento > m_H",
+      "unidade": "proporção",
+      "dominio": "mulheres com superior completo e rendimento válido",
+      "h0": "pi_M = p0",
+      "h1": "pi_M != p0",
+      "n_dominio": 178,
+      "sucessos": 44,
+      "lado_esperado": "menor",
+      "estimativa": 0.24719101123595505,
+      "ic": {
+        "metodo": "Wilson",
+        "inferior": 0.18960566973113296,
+        "superior": 0.3154576937961853,
+        "meia_largura": 0.06292601203252618
+      },
+      "estatistica": {
+        "nome": "z",
+        "valor": -6.6906343160288575,
+        "erro_padrao": 0.03747626358760897
+      },
+      "valor_p": 2.2220530006812486e-11,
+      "rejeita_h0": true,
+      "veredito_amostral": "apoia",
+      "referencia_nome": "p0",
+      "referencia": 0.4979309864317544,
+      "valor_populacional": 0.2981546040499482,
+      "N_dominio": 911024,
+      "diferenca_estimativa_menos_populacional": -0.05096359281399315,
+      "ic_contem_valor_populacional": true,
+      "veredito_exato": "vale",
+      "condicoes": [
+        {
+          "nome": "n*ref >= 10",
+          "valor": 88.63171558485227,
+          "limite": 10,
+          "status": "ok"
+        },
+        {
+          "nome": "n*(1-ref) >= 10",
+          "valor": 89.36828441514773,
+          "limite": 10,
+          "status": "ok"
+        },
+        {
+          "nome": "sem nulos no domínio",
+          "valor": 0,
+          "limite": 0,
+          "status": "ok"
+        }
+      ],
+      "m_H": 4000.0,
+      "p0": 0.4979309864317544
+    },
+    "qp3": {
+      "tipo": "media",
+      "variavel": "rendimento",
+      "unidade": "R$ por mês",
+      "dominio": "mulheres ocupadas com rendimento válido",
+      "h0": "mu_M = mu_H",
+      "h1": "mu_M != mu_H",
+      "n_dominio": 613,
+      "lado_esperado": "menor",
+      "estimativa": 2329.8058727569332,
+      "ic": {
+        "metodo": "t",
+        "inferior": 1997.8900548947317,
+        "superior": 2661.7216906191347,
+        "meia_largura": 331.9158178622015
+      },
+      "estatistica": {
+        "nome": "t",
+        "valor": -3.3465296046350264,
+        "erro_padrao": 169.01300562273894,
+        "gl": 612
+      },
+      "valor_p": 0.0008684252545631039,
+      "rejeita_h0": true,
+      "veredito_amostral": "apoia",
+      "referencia_nome": "mu_H",
+      "referencia": 2895.4128996417753,
+      "valor_populacional": 2339.7458592445387,
+      "N_dominio": 3176232,
+      "diferenca_estimativa_menos_populacional": -9.939986487605438,
+      "ic_contem_valor_populacional": true,
+      "veredito_exato": "vale",
+      "condicoes": [
+        {
+          "nome": "sem nulos no domínio",
+          "valor": 0,
+          "limite": 0,
+          "status": "ok"
+        },
+        {
+          "nome": "Cochran n > 25*G1^2",
+          "valor": 613,
+          "limite": 6078.775857530577,
+          "status": "aviso"
+        },
+        {
+          "nome": "veredito t igual ao BCa",
+          "valor": "t=apoia; BCa=apoia",
+          "limite": "iguais",
+          "status": "ok"
+        }
+      ],
+      "desvio_padrao_amostral": 4184.5654243522595,
+      "ic_bootstrap": {
+        "metodo": "BCa",
+        "B": 10000,
+        "semente": 2026111203,
+        "inferior": 2109.9596502915883,
+        "superior": 2881.456290902347,
+        "veredito": "apoia"
+      },
+      "assimetria_G1": 15.593300943072416,
+      "cochran_n_minimo": 6078.775857530577
+    },
+    "qp4": {
+      "tipo": "media",
+      "variavel": "rendimento",
+      "unidade": "R$ por mês",
+      "dominio": "mulheres com superior completo e rendimento válido",
+      "h0": "mu_MS = mu_HS",
+      "h1": "mu_MS != mu_HS",
+      "n_dominio": 178,
+      "lado_esperado": "menor",
+      "estimativa": 4213.612359550561,
+      "ic": {
+        "metodo": "t",
+        "inferior": 3160.5147527944046,
+        "superior": 5266.709966306718,
+        "meia_largura": 1053.097606756157
+      },
+      "estatistica": {
+        "nome": "t",
+        "valor": -4.587112526824999,
+        "erro_padrao": 533.6308311655578,
+        "gl": 177
+      },
+      "valor_p": 8.480379693250145e-06,
+      "rejeita_h0": true,
+      "veredito_amostral": "apoia",
+      "referencia_nome": "mu_HS",
+      "referencia": 6661.437029890128,
+      "valor_populacional": 4129.403644689932,
+      "N_dominio": 911024,
+      "diferenca_estimativa_menos_populacional": 84.2087148606297,
+      "ic_contem_valor_populacional": true,
+      "veredito_exato": "vale",
+      "condicoes": [
+        {
+          "nome": "sem nulos no domínio",
+          "valor": 0,
+          "limite": 0,
+          "status": "ok"
+        },
+        {
+          "nome": "Cochran n > 25*G1^2",
+          "valor": 178,
+          "limite": 2560.6405364230664,
+          "status": "aviso"
+        },
+        {
+          "nome": "veredito t igual ao BCa",
+          "valor": "t=apoia; BCa=apoia",
+          "limite": "iguais",
+          "status": "ok"
+        }
+      ],
+      "desvio_padrao_amostral": 7119.5232836713885,
+      "ic_bootstrap": {
+        "metodo": "BCa",
+        "B": 10000,
+        "semente": 2026111204,
+        "inferior": 3553.345054665155,
+        "superior": 6302.8848243802495,
+        "veredito": "apoia"
+      },
+      "assimetria_G1": 10.120554404622439,
+      "cochran_n_minimo": 2560.6405364230664
+    }
+  },
+  "hipotese": {
+    "veredito_exato": "sustentada",
+    "veredito_amostral": "sustentada",
+    "regra": "Camada exata (quadro, sem inferência): cada QP vale se e somente se a desigualdade estrita da sua afirmação vale no quadro, a saber p_M > p_H, pi_M < p0, mu_M < mu_H e mu_MS < mu_HS. A hipótese é sustentada se as quatro valem e negada se qualquer uma falha. Camada amostral: por QP, com o IC de 95% (Wilson para QP1 e QP2, t para QP3 e QP4) e a constante de referência r, apoia se o IC está inteiro do lado esperado de r (limite superior < r quando o sentido esperado é menor, limite inferior > r quando é maior), inconclusivo se r está dentro do IC fechado, contradiz se o IC está inteiro do lado oposto. A hipótese é sustentada se as quatro apoiam, negada se qualquer uma contradiz, inconclusiva nos demais casos."
+  },
+  "descritivas_amostra": {
+    "ddof": 1,
+    "metodo_quantis": "tipo 7",
+    "grupos": {
+      "total": {
+        "registros": 1537,
+        "proporcao_do_total": 1.0,
+        "superior_completo": {
+          "n": 338,
+          "proporcao": 0.2199089134677944
+        },
+        "nivel_sup": [
+          {
+            "nivel_sup": 0,
+            "rotulo": "sem superior completo",
+            "n": 1199,
+            "proporcao": 0.7800910865322056
+          },
+          {
+            "nivel_sup": 1,
+            "rotulo": "graduação",
+            "n": 263,
+            "proporcao": 0.17111255692908262
+          },
+          {
+            "nivel_sup": 2,
+            "rotulo": "especialização",
+            "n": 53,
+            "proporcao": 0.034482758620689655
+          },
+          {
+            "nivel_sup": 3,
+            "rotulo": "mestrado",
+            "n": 13,
+            "proporcao": 0.008458035133376708
+          },
+          {
+            "nivel_sup": 4,
+            "rotulo": "doutorado",
+            "n": 9,
+            "proporcao": 0.005855562784645413
+          }
+        ],
+        "faixa_idade": [
+          {
+            "faixa_idade": "25-29",
+            "n": 206,
+            "proporcao": 0.1340273259596617
+          },
+          {
+            "faixa_idade": "30-34",
+            "n": 219,
+            "proporcao": 0.1424853610930384
+          },
+          {
+            "faixa_idade": "35-39",
+            "n": 234,
+            "proporcao": 0.15224463240078073
+          },
+          {
+            "faixa_idade": "40-44",
+            "n": 265,
+            "proporcao": 0.1724137931034483
+          },
+          {
+            "faixa_idade": "45-49",
+            "n": 173,
+            "proporcao": 0.1125569290826285
+          },
+          {
+            "faixa_idade": "50-54",
+            "n": 161,
+            "proporcao": 0.10474951203643461
+          },
+          {
+            "faixa_idade": "55-59",
+            "n": 126,
+            "proporcao": 0.08197787898503578
+          },
+          {
+            "faixa_idade": "60-64",
+            "n": 100,
+            "proporcao": 0.06506180871828236
+          },
+          {
+            "faixa_idade": "65-69",
+            "n": 30,
+            "proporcao": 0.01951854261548471
+          },
+          {
+            "faixa_idade": "70-74",
+            "n": 13,
+            "proporcao": 0.008458035133376708
+          },
+          {
+            "faixa_idade": "75-79",
+            "n": 5,
+            "proporcao": 0.0032530904359141183
+          },
+          {
+            "faixa_idade": "80+",
+            "n": 5,
+            "proporcao": 0.0032530904359141183
+          }
+        ],
+        "situacao_rendimento": [
+          {
+            "situacao": "valido",
+            "n": 1526,
+            "proporcao": 0.9928432010409889
+          },
+          {
+            "situacao": "zero",
+            "n": 0,
+            "proporcao": 0.0
+          },
+          {
+            "situacao": "outra_forma",
+            "n": 0,
+            "proporcao": 0.0
+          },
+          {
+            "situacao": "nao_remunerado",
+            "n": 11,
+            "proporcao": 0.0071567989590110605
+          },
+          {
+            "situacao": "sem_informacao",
+            "n": 0,
+            "proporcao": 0.0
+          }
+        ],
+        "situacao_rendimento_excluida": {
+          "n": 11,
+          "proporcao": 0.0071567989590110605,
+          "categorias": [
+            "nao_remunerado"
+          ]
+        },
+        "pos_indeterminado": {
+          "n": 23,
+          "proporcao": 0.014964216005204945
+        },
+        "rendimento_valido": {
+          "n": 1526,
+          "media": 2706.6251638269987,
+          "mediana": 1600.0,
+          "desvio_padrao": 4359.397702841169,
+          "q1": 1212.0,
+          "q3": 3000.0,
+          "p10": 600.0,
+          "p90": 5000.0,
+          "minimo": 45.0,
+          "maximo": 90000.0,
+          "cv": 1.610639611684262
+        },
+        "rendimento_valido_superior": {
+          "n": 334,
+          "media": 5102.119760479042,
+          "mediana": 3290.0,
+          "desvio_padrao": 6660.436313299021,
+          "q1": 2000.0,
+          "q3": 6000.0,
+          "p10": 1212.0,
+          "p90": 10000.0,
+          "minimo": 200.0,
+          "maximo": 90000.0,
+          "cv": 1.3054253184903029
+        }
+      },
+      "mulher": {
+        "registros": 621,
+        "proporcao_do_total": 0.4040338321405335,
+        "superior_completo": {
+          "n": 182,
+          "proporcao": 0.29307568438003223
+        },
+        "nivel_sup": [
+          {
+            "nivel_sup": 0,
+            "rotulo": "sem superior completo",
+            "n": 439,
+            "proporcao": 0.7069243156199678
+          },
+          {
+            "nivel_sup": 1,
+            "rotulo": "graduação",
+            "n": 144,
+            "proporcao": 0.2318840579710145
+          },
+          {
+            "nivel_sup": 2,
+            "rotulo": "especialização",
+            "n": 28,
+            "proporcao": 0.04508856682769726
+          },
+          {
+            "nivel_sup": 3,
+            "rotulo": "mestrado",
+            "n": 6,
+            "proporcao": 0.00966183574879227
+          },
+          {
+            "nivel_sup": 4,
+            "rotulo": "doutorado",
+            "n": 4,
+            "proporcao": 0.00644122383252818
+          }
+        ],
+        "faixa_idade": [
+          {
+            "faixa_idade": "25-29",
+            "n": 77,
+            "proporcao": 0.12399355877616747
+          },
+          {
+            "faixa_idade": "30-34",
+            "n": 92,
+            "proporcao": 0.14814814814814814
+          },
+          {
+            "faixa_idade": "35-39",
+            "n": 98,
+            "proporcao": 0.15780998389694043
+          },
+          {
+            "faixa_idade": "40-44",
+            "n": 114,
+            "proporcao": 0.18357487922705315
+          },
+          {
+            "faixa_idade": "45-49",
+            "n": 67,
+            "proporcao": 0.10789049919484701
+          },
+          {
+            "faixa_idade": "50-54",
+            "n": 79,
+            "proporcao": 0.12721417069243157
+          },
+          {
+            "faixa_idade": "55-59",
+            "n": 51,
+            "proporcao": 0.0821256038647343
+          },
+          {
+            "faixa_idade": "60-64",
+            "n": 31,
+            "proporcao": 0.0499194847020934
+          },
+          {
+            "faixa_idade": "65-69",
+            "n": 5,
+            "proporcao": 0.008051529790660225
+          },
+          {
+            "faixa_idade": "70-74",
+            "n": 5,
+            "proporcao": 0.008051529790660225
+          },
+          {
+            "faixa_idade": "75-79",
+            "n": 2,
+            "proporcao": 0.00322061191626409
+          },
+          {
+            "faixa_idade": "80+",
+            "n": 0,
+            "proporcao": 0.0
+          }
+        ],
+        "situacao_rendimento": [
+          {
+            "situacao": "valido",
+            "n": 613,
+            "proporcao": 0.9871175523349437
+          },
+          {
+            "situacao": "zero",
+            "n": 0,
+            "proporcao": 0.0
+          },
+          {
+            "situacao": "outra_forma",
+            "n": 0,
+            "proporcao": 0.0
+          },
+          {
+            "situacao": "nao_remunerado",
+            "n": 8,
+            "proporcao": 0.01288244766505636
+          },
+          {
+            "situacao": "sem_informacao",
+            "n": 0,
+            "proporcao": 0.0
+          }
+        ],
+        "situacao_rendimento_excluida": {
+          "n": 8,
+          "proporcao": 0.01288244766505636,
+          "categorias": [
+            "nao_remunerado"
+          ]
+        },
+        "pos_indeterminado": {
+          "n": 12,
+          "proporcao": 0.01932367149758454
+        },
+        "rendimento_valido": {
+          "n": 613,
+          "media": 2329.8058727569332,
+          "mediana": 1500.0,
+          "desvio_padrao": 4184.5654243522595,
+          "q1": 1200.0,
+          "q3": 2500.0,
+          "p10": 600.0,
+          "p90": 4000.0,
+          "minimo": 45.0,
+          "maximo": 90000.0,
+          "cv": 1.79610047055145
+        },
+        "rendimento_valido_superior": {
+          "n": 178,
+          "media": 4213.612359550561,
+          "mediana": 3000.0,
+          "desvio_padrao": 7119.5232836713885,
+          "q1": 1825.0,
+          "q3": 4000.0,
+          "p10": 1212.0,
+          "p90": 8000.0,
+          "minimo": 200.0,
+          "maximo": 90000.0,
+          "cv": 1.6896483767744552
+        }
+      },
+      "homem": {
+        "registros": 916,
+        "proporcao_do_total": 0.5959661678594665,
+        "superior_completo": {
+          "n": 156,
+          "proporcao": 0.1703056768558952
+        },
+        "nivel_sup": [
+          {
+            "nivel_sup": 0,
+            "rotulo": "sem superior completo",
+            "n": 760,
+            "proporcao": 0.8296943231441049
+          },
+          {
+            "nivel_sup": 1,
+            "rotulo": "graduação",
+            "n": 119,
+            "proporcao": 0.1299126637554585
+          },
+          {
+            "nivel_sup": 2,
+            "rotulo": "especialização",
+            "n": 25,
+            "proporcao": 0.027292576419213975
+          },
+          {
+            "nivel_sup": 3,
+            "rotulo": "mestrado",
+            "n": 7,
+            "proporcao": 0.007641921397379912
+          },
+          {
+            "nivel_sup": 4,
+            "rotulo": "doutorado",
+            "n": 5,
+            "proporcao": 0.0054585152838427945
+          }
+        ],
+        "faixa_idade": [
+          {
+            "faixa_idade": "25-29",
+            "n": 129,
+            "proporcao": 0.1408296943231441
+          },
+          {
+            "faixa_idade": "30-34",
+            "n": 127,
+            "proporcao": 0.13864628820960698
+          },
+          {
+            "faixa_idade": "35-39",
+            "n": 136,
+            "proporcao": 0.14847161572052403
+          },
+          {
+            "faixa_idade": "40-44",
+            "n": 151,
+            "proporcao": 0.1648471615720524
+          },
+          {
+            "faixa_idade": "45-49",
+            "n": 106,
+            "proporcao": 0.11572052401746726
+          },
+          {
+            "faixa_idade": "50-54",
+            "n": 82,
+            "proporcao": 0.08951965065502183
+          },
+          {
+            "faixa_idade": "55-59",
+            "n": 75,
+            "proporcao": 0.08187772925764192
+          },
+          {
+            "faixa_idade": "60-64",
+            "n": 69,
+            "proporcao": 0.07532751091703056
+          },
+          {
+            "faixa_idade": "65-69",
+            "n": 25,
+            "proporcao": 0.027292576419213975
+          },
+          {
+            "faixa_idade": "70-74",
+            "n": 8,
+            "proporcao": 0.008733624454148471
+          },
+          {
+            "faixa_idade": "75-79",
+            "n": 3,
+            "proporcao": 0.0032751091703056767
+          },
+          {
+            "faixa_idade": "80+",
+            "n": 5,
+            "proporcao": 0.0054585152838427945
+          }
+        ],
+        "situacao_rendimento": [
+          {
+            "situacao": "valido",
+            "n": 913,
+            "proporcao": 0.9967248908296943
+          },
+          {
+            "situacao": "zero",
+            "n": 0,
+            "proporcao": 0.0
+          },
+          {
+            "situacao": "outra_forma",
+            "n": 0,
+            "proporcao": 0.0
+          },
+          {
+            "situacao": "nao_remunerado",
+            "n": 3,
+            "proporcao": 0.0032751091703056767
+          },
+          {
+            "situacao": "sem_informacao",
+            "n": 0,
+            "proporcao": 0.0
+          }
+        ],
+        "situacao_rendimento_excluida": {
+          "n": 3,
+          "proporcao": 0.0032751091703056767,
+          "categorias": [
+            "nao_remunerado"
+          ]
+        },
+        "pos_indeterminado": {
+          "n": 11,
+          "proporcao": 0.012008733624454149
+        },
+        "rendimento_valido": {
+          "n": 913,
+          "media": 2959.626506024096,
+          "mediana": 1900.0,
+          "desvio_padrao": 4457.360002086455,
+          "q1": 1212.0,
+          "q3": 3000.0,
+          "p10": 600.0,
+          "p90": 5260.000000000014,
+          "minimo": 50.0,
+          "maximo": 60000.0,
+          "cv": 1.5060549001753551
+        },
+        "rendimento_valido_superior": {
+          "n": 156,
+          "media": 6115.929487179487,
+          "mediana": 4000.0,
+          "desvio_padrao": 5956.716569161104,
+          "q1": 2200.0,
+          "q3": 8000.0,
+          "p10": 1500.0,
+          "p90": 12250.0,
+          "minimo": 200.0,
+          "maximo": 40000.0,
+          "cv": 0.9739675026744287
+        }
+      }
+    }
+  },
+  "diferencas_amostra_populacao": [
+    {
+      "indicador": "proporção de mulheres",
+      "grupo": "total",
+      "populacao": 0.4217751923732456,
+      "amostra": 0.4040338321405335,
+      "diferenca": -0.01774136023271211
+    },
+    {
+      "indicador": "proporção com superior completo",
+      "grupo": "total",
+      "populacao": 0.20652116023917683,
+      "amostra": 0.2199089134677944,
+      "diferenca": 0.013387753228617572
+    },
+    {
+      "indicador": "proporção com superior completo",
+      "grupo": "mulher",
+      "populacao": 0.28422651226644124,
+      "amostra": 0.29307568438003223,
+      "diferenca": 0.008849172113590986
+    },
+    {
+      "indicador": "proporção com superior completo",
+      "grupo": "homem",
+      "populacao": 0.1498404551441335,
+      "amostra": 0.1703056768558952,
+      "diferenca": 0.02046522171176171
+    },
+    {
+      "indicador": "média do rendimento válido",
+      "grupo": "total",
+      "populacao": 2662.329176216559,
+      "amostra": 2706.6251638269987,
+      "diferenca": 44.295987610439624
+    },
+    {
+      "indicador": "média do rendimento válido",
+      "grupo": "mulher",
+      "populacao": 2339.7458592445387,
+      "amostra": 2329.8058727569332,
+      "diferenca": -9.939986487605438
+    },
+    {
+      "indicador": "média do rendimento válido",
+      "grupo": "homem",
+      "populacao": 2895.4128996417753,
+      "amostra": 2959.626506024096,
+      "diferenca": 64.2136063823209
+    },
+    {
+      "indicador": "mediana do rendimento válido",
+      "grupo": "total",
+      "populacao": 1600.0,
+      "amostra": 1600.0,
+      "diferenca": 0.0
+    },
+    {
+      "indicador": "mediana do rendimento válido",
+      "grupo": "mulher",
+      "populacao": 1500.0,
+      "amostra": 1500.0,
+      "diferenca": 0.0
+    },
+    {
+      "indicador": "mediana do rendimento válido",
+      "grupo": "homem",
+      "populacao": 1800.0,
+      "amostra": 1900.0,
+      "diferenca": 100.0
+    },
+    {
+      "indicador": "média do rendimento válido com superior completo",
+      "grupo": "mulher",
+      "populacao": 4129.403644689932,
+      "amostra": 4213.612359550561,
+      "diferenca": 84.2087148606297
+    },
+    {
+      "indicador": "média do rendimento válido com superior completo",
+      "grupo": "homem",
+      "populacao": 6661.437029890128,
+      "amostra": 6115.929487179487,
+      "diferenca": -545.5075427106403
+    }
+  ]
+}
